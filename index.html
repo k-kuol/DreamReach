@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamReach Scholarships & Internships, in one place</title>
+<meta name="description" content="Find live internships and curated scholarship programs, search and filter by field and region, and track the ones you're applying to.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="wordmark">Dream<span>Reach</span></p>
+  <p class="tagline">opportunities, sorted</p>
+</header>
+
+<section class="hero">
+  <div class="hero__inner">
+    <h1>Every scholarship and internship worth chasing, in one place.</h1>
+    <p class="lede">DreamReach pulls live internship and entry-level listings and pairs them with a curated set of major scholarship programs searchable, filterable, and yours to track.</p>
+    <div class="stage-strip">
+      <div class="stage"><span class="stage__num">01</span><span class="stage__label">Discover live roles &amp; scholarships</span></div>
+      <div class="stage"><span class="stage__num">02</span><span class="stage__label">Filter by field, region, category</span></div>
+      <div class="stage"><span class="stage__num">03</span><span class="stage__label">Save the ones you're applying to</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="controls">
+  <nav class="tabs" role="tablist" aria-label="Opportunity type">
+    <button class="tab-btn tab-btn--active" data-tab="internships" role="tab" aria-selected="true">Internships & Jobs</button>
+    <button class="tab-btn" data-tab="scholarships" role="tab" aria-selected="false">Scholarships</button>
+    <button class="tab-btn" data-tab="saved" role="tab" aria-selected="false">Saved</button>
+  </nav>
+  <div class="filter-bar" id="filter-bar">
+    <input type="search" id="search-input" maxlength="100" placeholder="Search by title, field, or region…" aria-label="Search opportunities">
+    <div id="category-select"></div>
+    <div id="region-select"></div>
+    <div id="level-select"></div>
+    <div id="sort-select"></div>
+    <span class="results-count" id="results-count"></span>
+  </div>
+  <div class="saved-actions" id="saved-actions" hidden>
+    <button type="button" class="action-btn" id="export-btn">⬇ Export CSV</button>
+    <button type="button" class="action-btn" id="print-btn">🖨 Print list</button>
+  </div>
+</div>
+
+<main>
+  <div class="grid" id="results"></div>
+</main>
+
+<footer class="site-footer">
+  <p>Live internship &amp; job data from <a href="https://remotive.com/api/remote-jobs" target="_blank" rel="noopener noreferrer">Remotive's public API</a>, free and used with attribution.
+  Scholarship listings are a hand-curated reference set always confirm current deadlines on each program's official page.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
