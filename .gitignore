@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Dependency directories (not used in this project, but kept as a safeguard)
+node_modules/
+
+# Environment/secret files (this project needs none, but excluded as a safeguard)
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
