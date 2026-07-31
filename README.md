@@ -7,9 +7,7 @@ in one place, instead of juggling five tabs.
 
 ## Demo video & live deployment
 
-- **Demo video (≤2 min):** _[paste your YouTube/Vimeo link here, must show
-  the app running locally AND being accessed through the Lb01 load balancer
-  address]_
+- **Demo video:** https://drive.google.com/file/d/1Z2DpnsspoEZzw1gWJ_qo57tT8EYDMe2b/view?usp=drive_link 
 - **Deployed URL (via load balancer):** https://www.kuol.tech 
   
 ## Why this isn't a gimmick
